@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include silverlogic.postgresql"
+    - name: "Include mc"
       include_role:
-        name: "silverlogic.postgresql"
+        name: "mc"
