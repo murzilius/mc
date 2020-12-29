@@ -1,0 +1,16 @@
+---
+# tasks file for mc
+
+- name: Install MC for RHEL
+  import_tasks: redhat.yml
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+- name: Install MC for Debian
+  import_tasks: debian.yml
+  when: ansible_facts['os_family']|lower == 'debian'
+
+# roles/example/tasks/redhat.yml
+- name: Install MC
+  ansible.builtin.yum:
+    name: "mc"
+    state: present
