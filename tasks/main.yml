@@ -14,3 +14,4 @@
   ansible.builtin.yum:
     name: "mc"
     state: present
+    

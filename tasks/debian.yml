@@ -1,3 +1,4 @@
+---
 - name: Upgrade all packages to their latest version
   ansible.builtin.apt:
     name: "*"
@@ -6,3 +7,4 @@
   ansible.builtin.apt:
     name: "mc"
     state: present
+    

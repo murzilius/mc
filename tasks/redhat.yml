@@ -1,3 +1,4 @@
+---
 - name: upgrade all packages
   yum:
     name: '*'
@@ -7,4 +8,5 @@
   ansible.builtin.yum:
     name: "mc"
     state: present
+
 
