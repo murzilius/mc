@@ -4,4 +4,4 @@
   tasks:
     - name: "Include mc"
       include_role:
-        name: "mc"
+        name: mc
