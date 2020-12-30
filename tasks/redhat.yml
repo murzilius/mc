@@ -1,9 +1,4 @@
 ---
-- name: upgrade all packages
-  yum:
-    name: '*'
-    state: latest
-
 - name: Install MC for RHEL
   ansible.builtin.yum:
     name: "mc"
